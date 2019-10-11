@@ -177,6 +177,8 @@ ion-content[custom-palette] {
       z-index: 9999;
     }
     ion-checkbox {
+      --background-checked: var(--ion-color-dark);
+      --border-color-checked: var(--ion-color-dark);
       &[slot="end"] {
         margin-right: 0px;
       }
@@ -218,15 +220,22 @@ ion-content[custom-palette] {
         opacity: 0.7;  
       }
     }
-    &.item-has-focus ion-icon {
-      color: var(--input-focus-color);
-      opacity: 1 !important;
-    }
     &.item-has-error ion-icon {
       opacity: 1 !important;
     }
+    &[disabled] {
+      opacity: 1;
+      ion-label, ion-icon {
+        opacity: 0.3!important;
+      }
+    }
     [readonly] {
       pointer-events: none;
+      background: var(--ion-color-light);
+      margin-left: 8px;
+      margin-bottom: 8px;
+      width: calc(100% - 16px);
+      padding: 0!important;
     }
   }
 }

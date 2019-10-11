@@ -6,6 +6,24 @@ ion-button {
     box-sizing: content-box;
     min-height: 50px !important;  
   }
+  height: 40px;
+  font-size: 14px;
+  --padding-end: 1em;
+  --padding-start: 1em;
+  &[size="large"] {
+    height: 56px;
+    font-size: 20px;
+  }
+  &[size="medium"] {
+    height: 48px;
+    font-size: 16px;
+  }
+  &[size="small"] {
+    height: 32px;
+    font-size: 12px;
+  }
+  
+
 }
 ion-fab-button {
   --box-shadow: none !important;
