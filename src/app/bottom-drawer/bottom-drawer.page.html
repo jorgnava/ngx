@@ -1,0 +1,58 @@
+<ion-header id="header">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Bottom Drawer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding id="content-page">
+
+  <h2>Bottom Drawer Component</h2>
+  <ion-button fill="outline" (click)="showBottomDrawer = !showBottomDrawer">Show/Unshow</ion-button>
+
+</ion-content>
+
+<ion-bottom-drawer [(state)]="drawerState" minimumHeight="minimumHeight" [dockedHeight]="dockedHeight"
+  [shouldBounce]="shouldBounce" [distanceTop]="distanceTop" *ngIf="showBottomDrawer">
+  <div class="drawer-content">
+    <ion-fab-button (click)="setDrawerState()">
+      <ion-icon name="ios-arrow-up" *ngIf="drawerState == 1 || drawerState == 0" color="dark"></ion-icon>
+      <ion-icon name="ios-arrow-down" *ngIf="drawerState == 2" color="dark"></ion-icon>
+    </ion-fab-button>
+    <div class="drawer-content-without-arrow">
+      <div class="title">
+        <ion-text class="ion-text-center" color="dark">
+          <h4>Title</h4>
+        </ion-text>
+      </div>
+      <div class="boxes">
+        <div class="box">
+          <img src="https://via.placeholder.com/150x150.png/FFF/000/?text=1">
+          <p>Option 1</p>
+        </div>
+        <div class="box">
+          <img src="https://via.placeholder.com/150x150.png/FFF/000/?text=2">
+          <p>Option 2</p>
+        </div>
+        <div class="box">
+          <img src="https://via.placeholder.com/150x150.png/FFF/000/?text=3">
+          <p>Option 3</p>
+        </div>
+        <div class="box">
+          <img src="https://via.placeholder.com/150x150.png/FFF/000/?text=4">
+          <p>Option 4</p>
+        </div>
+        <div class="box">
+          <img src="https://via.placeholder.com/150x150.png/FFF/000/?text=5">
+          <p>Option 5</p>
+        </div>
+        <div class="box">
+          <img src="https://via.placeholder.com/150x150.png/FFF/000/?text=6">
+          <p>Option 6</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-bottom-drawer>

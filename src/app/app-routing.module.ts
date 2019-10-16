@@ -11,7 +11,8 @@ const routes: Routes = [
   { path: 'buttons', loadChildren: './buttons/buttons.module#ButtonsPageModule' },
   { path: 'texts', loadChildren: './texts/texts.module#TextsPageModule' },
   { path: 'dialogs', loadChildren: './dialogs/dialogs.module#DialogsPageModule' },
-  { path: 'theming', loadChildren: './theming/theming.module#ThemingPageModule' }
+  { path: 'theming', loadChildren: './theming/theming.module#ThemingPageModule' },
+  { path: 'bottom-drawer', loadChildren: './bottom-drawer/bottom-drawer.module#BottomDrawerPageModule' }
 ];
 
 @NgModule({

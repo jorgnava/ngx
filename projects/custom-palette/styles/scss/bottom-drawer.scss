@@ -1,0 +1,22 @@
+ion-bottom-drawer {
+	z-index: 100!important;
+	box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.17);
+	ion-fab-button {
+		--background: white;
+    --background-activated: white;
+    --background-focused: white;
+    --background-hover: white;
+		margin-bottom: -30px;
+    position: fixed;
+    top: -20px;
+    left: calc(50% - 28px);
+		ion-icon {
+			position: absolute;
+			top: 0;
+		}
+	}
+	.drawer-content-without-arrow {
+    position: fixed;
+    width: 100%;
+	}
+}

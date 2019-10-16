@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { IonicStorageModule } from '@ionic/storage';
 import { OkodeNgxCommonModule } from 'common'; // from local
+import { IonBottomDrawerModule } from 'ion-bottom-drawer';
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,6 +21,7 @@ import { OkodeNgxCommonModule } from 'common'; // from local
     IonicStorageModule.forRoot(),
     AppRoutingModule,
     OkodeNgxCommonModule.forRoot(),
+    IonBottomDrawerModule
   ],
   providers: [
     StatusBar,
