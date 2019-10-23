@@ -61,7 +61,7 @@ ion-content[custom-palette] {
      *  ION-INPUT
      */
     ion-input {
-      height: 48px;
+      height: 40px;
     }
     ion-input input {
       margin-left: 16px;
@@ -231,11 +231,13 @@ ion-content[custom-palette] {
     }
     [readonly] {
       pointer-events: none;
-      background: var(--ion-color-light);
-      margin-left: 8px;
-      margin-bottom: 8px;
-      width: calc(100% - 16px);
-      padding: 0!important;
+      &:not([type="date"]) {
+        background: var(--ion-color-light);
+        margin-left: 8px;
+        margin-bottom: 8px;
+        width: calc(100% - 16px);
+        padding: 0!important;
+      }
     }
   }
 }

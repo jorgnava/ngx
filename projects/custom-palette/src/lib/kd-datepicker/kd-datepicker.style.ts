@@ -59,6 +59,14 @@ export const KdDatepickerCssStyle = `
     background: #e2e2e2 !important;
   }
 
+  .wdp-mobile {
+    width: calc(100% - 32px) !important;
+    margin-left: 0px !important;
+  }
+  .wdp-mobile .wdp-container {
+    width: 100% !important;
+  }
+
   .wdp {
     position: fixed;
     z-index: 100;
